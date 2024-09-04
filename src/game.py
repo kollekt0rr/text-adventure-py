@@ -12,7 +12,7 @@ def clear():
 
 def format():
     print("======================================================================================================")
-
+              
 
 #map section
 #to-do: import function to generate map and store in DS 
@@ -33,10 +33,10 @@ while game_loop:
             
             clear()
             format()
-            hero_name = input("Tell me hero, what do they call you? \n>")
-            format()
+            hero_name = input("Tell me hero, what do they call you? \n> ")
+            format()   
             initial_menu = False
-            playing_game = True
+            playing_game = True 
             
         elif choice == "2":
             
@@ -58,18 +58,22 @@ while game_loop:
             
             if quit_question[0] == "y":
                 quit()
-            else:
+            
+            else: #probably add some option to confirm that they are quitting otherwise return to menu
                 
-                pass #return give either option of new game or load game 
+                pass
+                
         else:
             
             format()
             print("Sorry, I could not understand your mumbling. Please try communicating again.")
             format()
             
-    while playing_game:
-        pass
-    
+    if playing_game:
+        
+        print(f"Welcome {hero_name}. You awaken in a damp, dark room. The dust fills your lungs and the cold bites at your flesh.")
+        
+     
     pass
 
 
