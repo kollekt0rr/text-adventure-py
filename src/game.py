@@ -1,5 +1,6 @@
 #imports
-import os, random, characters #some additional when new features are added
+import os, random, characters #some additional imports will be added when new features are developed
+import dialogue.narration 
 
 #initializing global variables
 game_loop = True
@@ -11,8 +12,7 @@ def clear():
     os.system('cls')
 
 def format():
-    print("======================================================================================================")
-              
+    print("\n======================================================================================================\n")
 
 #map section
 #to-do: import function to generate map and store in DS 
@@ -23,8 +23,7 @@ while game_loop:
     while initial_menu:
         
         format()
-        print("Welcome Adventurer! Please make a selection by entering a number:")
-        print("1. New Game \n2. Load Game \n3. Achievements \n4. Rules & Hints \n5. Give in to cowardice (Quit)")
+        print(dialogue.narration.menu_options)
         format()
         
         choice = input("> ")
@@ -66,14 +65,13 @@ while game_loop:
         else:
             
             format()
-            print("Sorry, I could not understand your mumbling. Please try communicating again.")
+            print(dialogue.narration.menu_exception_handling)
             format()
             
-    if playing_game:
+    while playing_game:
         
         print(f"Welcome {hero_name}. You awaken in a damp, dark room. The dust fills your lungs and the cold bites at your flesh.")
         
-     
     pass
 
 
