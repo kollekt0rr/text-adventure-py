@@ -79,8 +79,7 @@ while game_loop:
             print("It is understandable the stresses of adventuring have proved too strong for such a weak heart.")
             quit()
         else:
-            
-              
+            pass
     pass
 
 
