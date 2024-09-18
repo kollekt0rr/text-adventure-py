@@ -12,7 +12,7 @@ def clear():
     os.system('cls')
 
 def format():
-    print("\n======================================================================================================")
+    print("======================================================================================================")
 
 #map section
 #to-do: import function to generate map and store in DS 
@@ -70,16 +70,29 @@ while game_loop:
         choice = input("What would you like to do? \n1. Actions\n2. Inventory\n3. Save\n4. Quit\n>  ")
         
         if choice == "1":
-            print("1. Attack\n2. Inspect\n3. ")
+            format()
+            action = input("1. Attack\n2. Inspect\n3. ...\n> ")
+            format()
+            if action == "1":
+                pass
+            elif action == "2":
+                pass
+            else:
+                pass
         elif choice == "2":
+            format()
             print("Inventory") #to-do: add inventory variable and display items in inventory along with dimensions (sizes and space left)
+            format()
         elif choice == "3":
             pass #to-do: add save feature to write out to text file
         elif choice == "4":
-            print("It is understandable the stresses of adventuring have proved too strong for such a weak heart.")
+            format()
+            print(dialogue.narration.menu_exception_handling)
+            format()
             quit()
         else:
             pass
-    pass
+        
+        pass
 
 
