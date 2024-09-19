@@ -9,3 +9,5 @@ simple python text adventure
 * Creating combat function and combat behavior.
 * Creating Characters and passing that onto Enemies, NPCs, and Hero classes. 
 * Cleaning up project and some restructuring/refactoring for clarity.
+    1. Probably get some front end experience by pretty-ing up this portion of the project :^D
+* Create either executable or automation for creation of the application/game.
