@@ -33,7 +33,7 @@ while game_loop:
     
     while initial_menu:
         
-        #save() whenever i finish adding the variables to save function
+        #save() whenever i finish adding the variables to save function to constantly autosave
         
         format()
         print(dialogue.narration.menu_options)
@@ -52,14 +52,14 @@ while game_loop:
             initial_menu = False
             playing_game = True 
         elif choice == "2":
-            pass #to-do: try-except with loading save file (TXT file?)
+            pass #save()
         elif choice == "3":
             pass #to-do: create and list achievements that provide unlocks
         elif choice == "4":
             pass #to-do: write rules and display key-binds
         elif choice == "5":
             format()
-            quit_question = input("Have the cries of the innocent fallen upon deaf ears? \nYes  No\n>").lower()
+            quit_question = input("Have the cries of the innocent fallen upon deaf ears? \nYes  No\n> ").lower()
             format()
             if quit_question[0] == "y":
                 quit()
