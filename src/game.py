@@ -14,6 +14,17 @@ def clear():
 def format():
     print("======================================================================================================")
 
+def save():
+    save_file_items = [
+        #add in variables like health or current room and inventory
+    ]
+    
+    save_file = open("text_game_load.txt", "w")
+    
+    for item in save_file_items:
+        save_file.write(item + "\n")
+    save_file.close()
+    
 #map section
 #to-do: import function to generate map and store in DS 
 
@@ -21,6 +32,8 @@ def format():
 while game_loop:
     
     while initial_menu:
+        
+        #save() whenever i finish adding the variables to save function
         
         format()
         print(dialogue.narration.menu_options)
@@ -35,8 +48,6 @@ while game_loop:
             if len(hero_name) < 1:
                 print("Well no name, you will be a fun one.")
                 hero_name = 'Nameless'
-            else:
-                continue
             format()   
             initial_menu = False
             playing_game = True 
