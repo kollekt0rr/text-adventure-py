@@ -104,6 +104,6 @@ while game_loop:
         else:
             pass
         
-        pass
+        #pass
 
 
